@@ -4,10 +4,10 @@
 html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
 scroll-behavior: smooth; scroll-padding-top: 20px }
 body { line-height: 1.5; min-height: 100vh }
-img { width: 100%; height: auto }
+img { width: 100%; height: auto; display: block }
+input, button, textarea, select { font: inherit }
 @media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
 @media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
-
 
 /* ============ CUSTOM PROPERTIES ============  */
 
@@ -17,7 +17,7 @@ img { width: 100%; height: auto }
     --black-000: #000000;
     --white-000: #ffffff;
     --trans-000: transparent;
- 
+
     --slate-050: #ECEFF1;
     --slate-100: #CFD8DC;
     --slate-200: #B0BEC5;
@@ -28,7 +28,7 @@ img { width: 100%; height: auto }
     --slate-700: #455A64;
     --slate-800: #37474F;
     --slate-900: #263238;
- 
+
     --gray-050: #F9FAFB;
     --gray-100: #f7fafc;
     --gray-200: #edf2f7;
@@ -39,7 +39,7 @@ img { width: 100%; height: auto }
     --gray-700: #4a5568;
     --gray-800: #2d3748;
     --gray-900: #1a202c;
- 
+
     --red-050: #FEF2F2;
     --red-100: #fff5f5;
     --red-200: #fed7d7;
@@ -50,7 +50,7 @@ img { width: 100%; height: auto }
     --red-700: #c53030;
     --red-800: #9b2c2c;
     --red-900: #742a2a;
- 
+
     --orange-050: #FFF7ED;
     --orange-100: #fffaf0;
     --orange-200: #feebc8;
@@ -61,7 +61,7 @@ img { width: 100%; height: auto }
     --orange-700: #c05621;
     --orange-800: #9c4221;
     --orange-900: #7b341e;
- 
+
     --amber-050: #FFFBEB;
     --amber-100: #FEF3C7;
     --amber-200: #FDE68A;
@@ -72,7 +72,7 @@ img { width: 100%; height: auto }
     --amber-700: #B45309;
     --amber-800: #92400E;
     --amber-900: #78350F;
- 
+
     --yellow-050: #FEFCE8;
     --yellow-100: #fffff0;
     --yellow-200: #fefcbf;
@@ -83,7 +83,7 @@ img { width: 100%; height: auto }
     --yellow-700: #b7791f;
     --yellow-800: #975a16;
     --yellow-900: #744210;
- 
+
     --lime-050: #F7FEE7;
     --lime-100: #ECFCCB;
     --lime-200: #D9F99D;
@@ -94,7 +94,7 @@ img { width: 100%; height: auto }
     --lime-700: #4D7C0F;
     --lime-800: #3F6212;
     --lime-900: #365314;
- 
+
     --green-050: #F0FDF4;
     --green-100: #f0fff4;
     --green-200: #c6f6d5;
@@ -105,7 +105,7 @@ img { width: 100%; height: auto }
     --green-700: #2f855a;
     --green-800: #276749;
     --green-900: #22543d;
- 
+
     --teal-050: #F0FDFA;
     --teal-100: #CCFBF1;
     --teal-200: #99F6E4;
@@ -116,7 +116,7 @@ img { width: 100%; height: auto }
     --teal-700: #0F766E;
     --teal-800: #115E59;
     --teal-900: #134E4A;
- 
+
     --cyan-050: #ECFEFF;
     --cyan-100: #CFFAFE;
     --cyan-200: #A5F3FC;
@@ -127,7 +127,7 @@ img { width: 100%; height: auto }
     --cyan-700: #0E7490;
     --cyan-800: #155E75;
     --cyan-900: #164E63;
- 
+
     --sky-050: #F0F9FF;
     --sky-100: #E0F2FE;
     --sky-200: #BAE6FD;
@@ -138,7 +138,7 @@ img { width: 100%; height: auto }
     --sky-700: #0369A1;
     --sky-800: #075985;
     --sky-900: #0C4A6E;
- 
+
     --blue-050: #EFF6FF;
     --blue-100: #DBEAFE;
     --blue-200: #BFDBFE;
@@ -149,7 +149,7 @@ img { width: 100%; height: auto }
     --blue-700: #1D4ED8;
     --blue-800: #1E40AF;
     --blue-900: #1E3A8A;
- 
+
     --indigo-050: #EEF2FF;
     --indigo-100: #E0E7FF;
     --indigo-200: #C7D2FE;
@@ -160,7 +160,7 @@ img { width: 100%; height: auto }
     --indigo-700: #4338CA;
     --indigo-800: #3730A3;
     --indigo-900: #312E81;
- 
+
     --purple-050: #FAF5FF;
     --purple-100: #F3E8FF;
     --purple-200: #E9D5FF;
@@ -171,7 +171,7 @@ img { width: 100%; height: auto }
     --purple-700: #7E22CE;
     --purple-800: #6B21A8;
     --purple-900: #581C87;
- 
+
     --fuchsia-050: #FDF4FF;
     --fuchsia-100: #FAE8FF;
     --fuchsia-200: #F5D0FE;
@@ -182,7 +182,7 @@ img { width: 100%; height: auto }
     --fuchsia-700: #A21CAF;
     --fuchsia-800: #86198F;
     --fuchsia-900: #701A75;
- 
+
     --pink-050: #FDF2F8;
     --pink-100: #FCE7F3;
     --pink-200: #FBCFE8;
@@ -193,7 +193,7 @@ img { width: 100%; height: auto }
     --pink-700: #BE185D;
     --pink-800: #9D174D;
     --pink-900: #831843;
- 
+
     --rose-050: #FFF1F2;
     --rose-100: #FFE4E6;
     --rose-200: #FECDD3;
@@ -204,7 +204,7 @@ img { width: 100%; height: auto }
     --rose-700: #BE123C;
     --rose-800: #9F1239;
     --rose-900: #881337;
- 
+
     --brown-050: #EFEBE9;
     --brown-100: #D7CCC8;
     --brown-200: #BCAAA4;
@@ -215,7 +215,7 @@ img { width: 100%; height: auto }
     --brown-700: #5D4037;
     --brown-800: #4E342E;
     --brown-900: #3E2723;
- 
+
     --trend-050: #fff4d9;
     --trend-100: #fdd0bb;
     --trend-200: #fea8b3;
@@ -225,18 +225,20 @@ img { width: 100%; height: auto }
     --trend-600: #400c3e;
     --trend-700: #2c4763;
     --trend-800: #1f364d;
-    --trend-900: #0e2439;  
+    --trend-900: #0e2439;
 
-    /* Alternatives to default sans-serif font */
+    /* Alternatives to default sans-serif font-family */
     --font-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
 
-     /* Alternatives to default serif font */
+    /* Alternatives to default serif font-family */
     --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 
-     /* Alternatives to default monospace font */
+    /* Alternatives to default monospace font font-family */
     --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-    /* Fluid font SIZE scale */
+    --global-font: var(--font-sans);
+    
+    /* Fluid font sizes */
     --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
     --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
     --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
@@ -244,117 +246,84 @@ img { width: 100%; height: auto }
     --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
     --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
     --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
+
 }
 
-/*  ============== LAYOUT FOR CONTENT CONTAINERS ================= */
-nav, header, section, footer { position: relative; display: block }
-header, section, footer { margin-left: auto; margin-right: auto; overflow: hidden }
-/* Under last content item, zero the bottom margin */
-section > *:last-child { margin-bottom: 0 !important }
 
-/*  ====================== HEADER ======================== */
-/* Padding around content: laptops / desktops  */
-@media (min-width: 768px) {
-    header { 
-        padding-top: 2%; 
-        padding-right: 20%;
-        padding-bottom: 5%;
-        padding-left: 20%
-    }
-}
-                        
-/* Padding around content: mobiles */
-@media (max-width: 767px) {
-    header { 
-        padding-top: 5%;
-        padding-right: 5%;
-        padding-bottom: 0%;
-        padding-left: 5%
-    }
-}
-/*  ====================== SECTIONS ======================== */
-
-/* Padding around content: laptops / desktops  */
-@media (min-width: 768px) {
-    section { 
-        padding-top: 3%;
-        padding-right: 20%;
-        padding-bottom: 3%;
-        padding-left: 20%
-    }
-}
-                        
-/* Padding around content: mobiles */
-@media (max-width: 767px) {
-    section { 
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-left: 5% 
-    }
+/* HEADER */
+header { 
+    display: flex; flex-direction: column; justify-content: space-around;
+    align-items: center; padding: 20px 0; background-color: var(--green-300);
+    margin-left:auto; margin-right:auto; width: 100%;
 }
 
-/* Maximum width of any section */
-section { max-width: 1920px }
-/* Maximum width for contents of any section */
-section > * { max-width: 1600px }
+@media (min-width: 1025px) { header { padding: 3% 22% 5% 22% } }
+@media (min-width: 768px) and (max-width: 1024px) { header { padding: 5% 20% } }
+@media (max-width: 767px) { header { padding: 32px 9% 32px 9% } }
 
-/* When content width < viewport width, equalise spacing at left and right */
-section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
+header *:last-child { margin-bottom: 0 !important }
 
-/* ============= TYPOGRAPHY ============ */
 
-body { 
-    background-color: var(--blue-200);
-    font-family: var(--font-serif); 
-}
+/* SECTIONS */
+section { background-color: var(--green-200) }
 
+/* Padding around content */
+@media (min-width: 1025px) { section { padding: 4% 24% } }
+@media (min-width: 768px) and (max-width: 1024px) { section { padding: 5% 20% } }
+@media (max-width: 767px) { section { padding: 32px 9% 32px 9% } }
+
+h1, h2, h2 { color: var(--green-700) }
+
+section *:last-child { margin-bottom: 0 !important }
+
+body { font-family: var(--font-sans) }
+
+
+/* Main heading */
 h1 {
-    font-size: var(--fs-xxxl);
-    margin-top: 32px;
-    margin-bottom: 16px;
-    line-height: 1.2;
-    color: var(--blue-800);
+	font-weight: bold;
+    font-size: var(--fs-xxl);
+    line-height: 1.1;    
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: -2px
 }
 
+header p { 
+    font-size: var(--fs-md);
+    color: var(--green-900) ;
+    text-align: center;
+    font-weight:bold
+}
+
+/* Small headings */
 h2 {
+    font-weight: bold;
     font-size: var(--fs-xl);
-    line-height: 1.2;
-    margin-bottom: 6px;
+    line-height: 1.2;    
+    margin-top: 42px;
+    margin-bottom: 14px;
 }
 
-/* Applies only to h2 tag inside the header */
-header h2 { 
-    font-weight: normal; 
-    font-style: italic; 
-    color: var(--blue-800);
-}
+section h2:nth-child(1) { margin-top: 0 }
 
-/* Applies only to h2 tags inside the sections*/
-section h2 { letter-spacing: -1px; }
-
+/* Text paragraphs */
 p {
-	font-size: var(--fs-md);
-    line-height: 1.7;
-	margin-bottom: 12px;
+    font-size: calc(var(--fs-base)* 1.1);
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-a { color: var(--blue-800); }
-
-.section-1 { background-color: var(--trend-300); }
-
-.section-2 { background-color: var(--sky-200); }
-
-.section-3 { background-color: var(--lime-300); }
-
-.section-4 { background-color: var(--trend-700); }
-
-.section-4 h2, .section-4 p { 
-    color: #fff;
+.highlight-text { 
+    background-color: var(--green-700);
+    color: white;
+    padding: 3px 12px 6px 12px; 
+    width: fit-content;
 }
 
-.section-5 { background-color: var(--purple-300); }
-
-
-
-
+/* Images */
+img { 
+    margin-bottom: 24px; 
+    border-radius: 25px;
+}
