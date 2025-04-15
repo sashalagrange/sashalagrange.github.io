@@ -1,14 +1,266 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { line-height: 1.5; min-height: 100vh }
+img { max-width: 100%; height: auto; display: block; margin: 0 auto }
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
 
-nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #0f172a }
 
-header.theme-dark   { background-color: #0f172a }
+/* ============ CUSTOM PROPERTIES ============  */
+:root {
+    /* Alternatives to default sans-serif font */
+    --font-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
 
-header.theme-dark  h1 { color: var(--sky-400); }
+     /* Alternatives to default serif font */
+    --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 
-section.theme-dark   { background-color: #0f172a }
+     /* Alternatives to default monospace font */
+    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-footer.theme-dark   { background-color: #0f172a }
+    /* Fluid font size scale */
+    --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
+    --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 1vi + 1.31rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);  
+    
+    /* Color Variables */
+    --bittersweet: #f25f5cff;
+    --electric-purple: #c200fbff;
+    --hunter-green: #33673bff;
+    --eerie-black: #19231aff;
+    --russian-violet: #190028ff;
+    --dark-purple: rgb(31, 4, 37);
+    --federal-blue: #060f52ff;
+    --indigo: #3e0482ff;
+    --emerald: #36ce8cff;
+    --burnt-sienna: #e58666ff;
+    --rose-taupe: #8f5451ff;
+    --eggplant: #4f323cff;
+    --fire-brick: #c1121fff;
+    --blue-violet: #8a2be2ff;
+    --coral: #ff7f50ff;
+    --beige: #e9edc9ff;
+    --cornsilk: #fefae0ff;
+    --papaya-whip: #faedcdff;
+    --pure-black: #000000ff;
+    --sandy-brown: #fea04dff;
+    --pumpkin: #ff853fff;
+    --salmon-pink: #ff8c94ff;
+    --persian-pink: #ff75c6ff;
+    --orchid: #d267c5ff;
+    --french-mauve: #d572c9ff;
+    --atomic-tangerine: #ff8e51ff;
+    --orange-crayola: #e8773fff;
+    --peach: #ffb88cff;
+}
 
+/* ============ TYPOGRAPHY ============  */
 
+/* Nav Bar */
+nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background: linear-gradient(to right, var(--russian-violet), var(--eggplant)) }
+
+/* Menu */
+nav.theme-dark ul.links-wrapper li { font-family: "Fira Sans", sans-serif; }
+
+nav.theme-dark ul.links-wrapper li a:link, nav.theme-dark ul.links-wrapper li a:visited { color: var(--coral) }
+nav.theme-dark ul.links-wrapper li a:focus, nav.theme-dark ul.links-wrapper li a:hover, nav.theme-dark ul.links-wrapper li a:active { color: var(--orchid); text-decoration: none }
+
+nav.theme-dark a#btn-cta { font-family: "Fira Sans", sans-serif;}
+
+nav.theme-dark a#btn-cta:link, nav.theme-dark a#btn-cta:visited { color: var(--pure-black) }
+nav.theme-dark a#btn-cta:link, nav.theme-dark a#btn-cta:visited { background-color: var(--coral) }
+nav.theme-dark a#btn-cta:link, nav.theme-dark a#btn-cta:visited { border-color: var(--coral) }
+
+nav.theme-dark a#btn-cta:focus, nav.theme-dark a#btn-cta:hover, nav.theme-dark a#btn-cta:active { color: var(--cornsilk) }
+nav.theme-dark a#btn-cta:focus, nav.theme-dark a#btn-cta:hover, nav.theme-dark a#btn-cta:active { background-color: var(--orchid) }
+nav.theme-dark a#btn-cta:focus, nav.theme-dark a#btn-cta:hover, nav.theme-dark a#btn-cta:active { border-color: var(--orchid) }
+
+/* Hero Block Home Page*/
+header.theme-dark { background: linear-gradient(to right, var(--russian-violet), var(--eggplant)) }
+
+header.theme-dark h1 { color: var(--coral) }
+header.theme-dark h1 { font-family: "Fira Sans", sans-serif; font-size: var(--fs-xxl);}
+
+header.theme-dark h2 { color: var(--cornsilk);}
+header.theme-dark h2 { font-family: "Archivo", serif; font-size: var(--fs-md);}
+
+header.theme-dark .badge { color: var(--pure-black)}
+header.theme-dark .badge { background-color: var(--peach) }
+header.theme-dark .badge { font-family: "Fira Sans", sans-serif; }
+
+header.theme-dark .container-btn a.btn:nth-child(1) { font-family: "Archivo", serif; }
+header.theme-dark .container-btn a.btn:nth-child(2) { font-family: "Archivo", serif; }
+
+header.theme-dark .container-btn a.btn:nth-child(1):link,
+header.theme-dark .container-btn a.btn:nth-child(1):visited { color: var(--pure-black) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):link,
+header.theme-dark .container-btn a.btn:nth-child(1):visited { background-color: var(--coral) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):link,
+header.theme-dark .container-btn a.btn:nth-child(1):visited { border-color: var(--coral) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):focus,
+header.theme-dark .container-btn a.btn:nth-child(1):hover,
+header.theme-dark .container-btn a.btn:nth-child(1):active { color: var(--cornsilk) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):focus,
+header.theme-dark .container-btn a.btn:nth-child(1):hover,
+header.theme-dark .container-btn a.btn:nth-child(1):active { background-color: var(--orchid) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):focus,
+header.theme-dark .container-btn a.btn:nth-child(1):hover,
+header.theme-dark .container-btn a.btn:nth-child(1):active { border-color: var(--orchid) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):link,
+header.theme-dark .container-btn a.btn:nth-child(2):visited { color: var(--coral) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):link,
+header.theme-dark .container-btn a.btn:nth-child(2):visited { border-color: var(--coral) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):focus,
+header.theme-dark .container-btn a.btn:nth-child(2):hover,
+header.theme-dark .container-btn a.btn:nth-child(2):active { color: var(--cornsilk) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):focus,
+header.theme-dark .container-btn a.btn:nth-child(2):hover,
+header.theme-dark .container-btn a.btn:nth-child(2):active { background-color: var(--orchid) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):focus,
+header.theme-dark .container-btn a.btn:nth-child(2):hover,
+header.theme-dark .container-btn a.btn:nth-child(2):active { border-color: var(--orchid) }
 
 header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+
+.hero-image { 
+    max-width: 350px;
+    max-height: 550px;
+    border: var(--coral) 3px solid;
+}
+
+/* Hero Block Portfolio, Store, Contact */
+header.theme-dark .container-text h1 {font-family: "Fira Sans" sans-serif; font-size: var(--fs-xxxl);}
+header.theme-dark .container-text h2 {font-family: "Archivo", serif;}
+
+header.theme-dark .container-text h2 a:link, header.theme-dark .container-text h2 a:visited { color: var(--peach); }
+header.theme-dark .container-text h2 a:focus, header.theme-dark .container-text h2 a:hover, header.theme-dark .container-text h2 a:active { color: var(--orchid); }
+
+/* Sections Home, Portfolio */
+section.theme-dark   { background: linear-gradient(to right, var(--russian-violet), var(--eggplant)) }
+
+.section-selector-1 .col-1 h2 { color: var(--coral) }
+.section-selector-1 .col-1 h2 { font-family: "Fira Sans", sans-serif; font-size: var(--fs-xxl); }
+
+.section-selector-1 .col-1 h3 { color: var(--cornsilk) }
+.section-selector-1 .col-1 h3 { font-family: "Archivo", serif; }
+
+.section-selector-1 .col-1 h3 a:link, .section-selector-1 .col-1 h3 a:visited { color: var(--peach) }
+.section-selector-1 .col-1 h3 a:focus, .section-selector-1 .col-1 h3 a:hover, .section-selector-1 .col-1 h3 a:active { color: var(--orchid) }
+
+.section-selector-1 .col-3 h3 { color: var(--coral) }
+.section-selector-1 .col-3 h3 { font-family: "Fira Sans", sans-serif; }
+
+.section-selector-1 .col-3 p { color: var(--cornsilk) }
+.section-selector-1 .col-3 p { font-family: "Archivo", serif; }
+
+.section-selector-1 a.btn { font-family: "Archivo", serif; }
+
+.section-selector-1 a.btn:link,
+.section-selector-1 a.btn:visited { color: var(--pure-black) }
+
+.section-selector-1 a.btn:link,
+.section-selector-1 a.btn:visited { background-color: var(--coral) }
+
+.section-selector-1 a.btn:link,
+.section-selector-1 a.btn:visited { border-color: var(--coral) }
+
+.section-selector-1 a.btn:focus,
+.section-selector-1 a.btn:hover,
+.section-selector-1 a.btn:active { color: var(--cornsilk) }
+
+.section-selector-1 a.btn:focus,
+.section-selector-1 a.btn:hover,
+.section-selector-1 a.btn:active { background-color: var(--orchid) }
+
+.section-selector-1 a.btn:focus,
+.section-selector-1 a.btn:hover,
+.section-selector-1 a.btn:active { border-color: var(--orchid) }
+
+/* Sections Store */
+.section-selector-1 .col-4 h3 { font-family: "Fira Sans", sans-serif; }
+.section-selector-1 .col-4 h3 { color: var(--peach) }
+
+.section-selector-1 .col-4 p { font-family: "Archivo", serif; }
+.section-selector-1 .col-4 p { color: var(--cornsilk) }
+
+.section-selector-1 .col-4 a.btn:link,
+.section-selector-1 .col-4 a.btn:visited { color: var(--pure-black) }
+
+.section-selector-1 .col-4 a.btn:link,
+.section-selector-1 .col-4 a.btn:visited { background-color: var(--coral) }
+
+.section-selector-1 .col-4 a.btn:link,
+.section-selector-1 .col-4 a.btn:visited { border-color: var(--coral) }
+
+.section-selector-1 .col-4 a.btn:focus,
+.section-selector-1 .col-4 a.btn:hover,
+.section-selector-1 .col-4 a.btn:active { color: var(--cornsilk) }
+
+.section-selector-1 .col-4 a.btn:focus,
+.section-selector-1 .col-4 a.btn:hover,
+.section-selector-1 .col-4 a.btn:active { background-color: var(--orchid) }
+
+.section-selector-1 .col-4 a.btn:focus,
+.section-selector-1 .col-4 a.btn:hover,
+.section-selector-1 .col-4 a.btn:active { border-color: var(--orchid) }
+
+/* Sections Contact */
+.theme-dark.section-selector-1 .col-2 form { background-color: var(--russian-violet) !important; }
+.theme-dark.section-selector-1 .col-2 form { font-family: "Archivo", serif;}
+
+.theme-dark.section-selector-1 #btn-submit { font-family: "Archivo", serif; font-weight: bold;}
+.theme-dark.section-selector-1 #btn-submit { background-color: var(--coral) }
+.theme-dark.section-selector-1 #btn-submit { border-color: var(--coral) }
+.theme-dark.section-selector-1 #btn-submit { color: var(--pure-black) }
+
+.theme-dark.section-selector-1 #btn-submit:focus,
+.theme-dark.section-selector-1 #btn-submit:hover,
+.theme-dark.section-selector-1 #btn-submit:active { color: var(--cornsilk) }
+
+.theme-dark.section-selector-1 #btn-submit:focus,
+.theme-dark.section-selector-1 #btn-submit:hover,
+.theme-dark.section-selector-1 #btn-submit:active { background-color: var(--orchid) }
+
+.theme-dark.section-selector-1 #btn-submit:focus,
+.theme-dark.section-selector-1 #btn-submit:hover,
+.theme-dark.section-selector-1 #btn-submit:active { border-color: var(--orchid) }
+
+
+/* Footer */
+footer.theme-dark   { background: linear-gradient(to right, var(--russian-violet), var(--eggplant)) }
+
+footer.theme-dark h2 { color: var(--coral); font-size: var(--fs-xxl); }
+footer.theme-dark h2 { font-family: "Fira Sans", sans-serif; }
+
+footer.theme-dark h3 { color: var(--peach) }
+footer.theme-dark h3 { font-family: "Archivo", serif; }
+
+footer.theme-dark ul.footer-links li { font-family: "Fira Sans", sans-serif; }
+footer.theme-dark ul.footer-links li a:link, footer.theme-dark ul.footer-links li a:visited { color: var(--coral); text-decoration: none  } 
+footer.theme-dark ul.footer-links li a:focus, footer.theme-dark ul.footer-links li a:hover, footer.theme-dark ul.footer-links li a:active { color: var(--orchid) } 
+
+.fa-linkedin { color: var(--peach) !important }
+.fa-linkedin:hover { color: var(--orchid) !important}
+
+.fa-github-square { color: var(--peach) !important }
+.fa-github-square:hover { color: var(--orchid) !important}
+
+footer.theme-dark .privacy { font-family: "Archivo", serif; }
+footer.theme-dark .privacy a:link, footer.theme-dark .privacy a:visited { color: var(--coral); text-decoration: none; }
+footer.theme-dark .privacy a:focus, footer.theme-dark .privacy a:hover, footer.theme-dark .privacy a:active { color: var(--orchid) }
