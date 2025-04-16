@@ -68,12 +68,12 @@ nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background: linear-grad
 /* Menu */
 nav.theme-dark ul.links-wrapper li { font-family: "Fira Sans", sans-serif; }
 
-nav.theme-dark ul.links-wrapper li a:link, nav.theme-dark ul.links-wrapper li a:visited { color: var(--coral) }
+nav.theme-dark ul.links-wrapper li a:link, nav.theme-dark ul.links-wrapper li a:visited { color: var(--coral); transition: all 0.3 ease; }
 nav.theme-dark ul.links-wrapper li a:focus, nav.theme-dark ul.links-wrapper li a:hover, nav.theme-dark ul.links-wrapper li a:active { color: var(--orchid); text-decoration: none }
 
 nav.theme-dark a#btn-cta { font-family: "Fira Sans", sans-serif;}
 
-nav.theme-dark a#btn-cta:link, nav.theme-dark a#btn-cta:visited { color: var(--pure-black) }
+nav.theme-dark a#btn-cta:link, nav.theme-dark a#btn-cta:visited { color: var(--pure-black); transition: all 0.3 ease; }
 nav.theme-dark a#btn-cta:link, nav.theme-dark a#btn-cta:visited { background-color: var(--coral) }
 nav.theme-dark a#btn-cta:link, nav.theme-dark a#btn-cta:visited { border-color: var(--coral) }
 
@@ -98,7 +98,7 @@ header.theme-dark .container-btn a.btn:nth-child(1) { font-family: "Archivo", se
 header.theme-dark .container-btn a.btn:nth-child(2) { font-family: "Archivo", serif; }
 
 header.theme-dark .container-btn a.btn:nth-child(1):link,
-header.theme-dark .container-btn a.btn:nth-child(1):visited { color: var(--pure-black) }
+header.theme-dark .container-btn a.btn:nth-child(1):visited { color: var(--pure-black); transition: all 0.3 ease; }
 
 header.theme-dark .container-btn a.btn:nth-child(1):link,
 header.theme-dark .container-btn a.btn:nth-child(1):visited { background-color: var(--coral) }
@@ -119,7 +119,7 @@ header.theme-dark .container-btn a.btn:nth-child(1):hover,
 header.theme-dark .container-btn a.btn:nth-child(1):active { border-color: var(--orchid) }
 
 header.theme-dark .container-btn a.btn:nth-child(2):link,
-header.theme-dark .container-btn a.btn:nth-child(2):visited { color: var(--coral) }
+header.theme-dark .container-btn a.btn:nth-child(2):visited { color: var(--coral); transition: all 0.3 ease; }
 
 header.theme-dark .container-btn a.btn:nth-child(2):link,
 header.theme-dark .container-btn a.btn:nth-child(2):visited { border-color: var(--coral) }
@@ -148,7 +148,7 @@ header .col-text h2, .col-1 > h3 { line-height: 1.8 }
 header.theme-dark .container-text h1 {font-family: "Fira Sans" sans-serif; font-size: var(--fs-xxxl);}
 header.theme-dark .container-text h2 {font-family: "Archivo", serif;}
 
-header.theme-dark .container-text h2 a:link, header.theme-dark .container-text h2 a:visited { color: var(--peach); }
+header.theme-dark .container-text h2 a:link, header.theme-dark .container-text h2 a:visited { color: var(--peach); transition: all 0.3 ease; }
 header.theme-dark .container-text h2 a:focus, header.theme-dark .container-text h2 a:hover, header.theme-dark .container-text h2 a:active { color: var(--orchid); }
 
 /* Sections Home, Portfolio */
@@ -160,7 +160,7 @@ section.theme-dark   { background: linear-gradient(to right, var(--russian-viole
 .section-selector-1 .col-1 h3 { color: var(--cornsilk) }
 .section-selector-1 .col-1 h3 { font-family: "Archivo", serif; }
 
-.section-selector-1 .col-1 h3 a:link, .section-selector-1 .col-1 h3 a:visited { color: var(--peach) }
+.section-selector-1 .col-1 h3 a:link, .section-selector-1 .col-1 h3 a:visited { color: var(--peach); transition: all 0.3 ease; }
 .section-selector-1 .col-1 h3 a:focus, .section-selector-1 .col-1 h3 a:hover, .section-selector-1 .col-1 h3 a:active { color: var(--orchid) }
 
 .section-selector-1 .col-3 h3 { color: var(--coral) }
@@ -172,7 +172,7 @@ section.theme-dark   { background: linear-gradient(to right, var(--russian-viole
 .section-selector-1 a.btn { font-family: "Archivo", serif; }
 
 .section-selector-1 a.btn:link,
-.section-selector-1 a.btn:visited { color: var(--pure-black) }
+.section-selector-1 a.btn:visited { color: var(--pure-black); transition: all 0.3 ease; }
 
 .section-selector-1 a.btn:link,
 .section-selector-1 a.btn:visited { background-color: var(--coral) }
@@ -200,7 +200,7 @@ section.theme-dark   { background: linear-gradient(to right, var(--russian-viole
 .section-selector-1 .col-4 p { color: var(--cornsilk) }
 
 .section-selector-1 .col-4 a.btn:link,
-.section-selector-1 .col-4 a.btn:visited { color: var(--pure-black) }
+.section-selector-1 .col-4 a.btn:visited { color: var(--pure-black); transition: all 0.3 ease; }
 
 .section-selector-1 .col-4 a.btn:link,
 .section-selector-1 .col-4 a.btn:visited { background-color: var(--coral) }
@@ -224,10 +224,10 @@ section.theme-dark   { background: linear-gradient(to right, var(--russian-viole
 .theme-dark.section-selector-1 .col-2 form { background-color: var(--russian-violet) !important; }
 .theme-dark.section-selector-1 .col-2 form { font-family: "Archivo", serif;}
 
-.theme-dark.section-selector-1 #btn-submit { font-family: "Archivo", serif; font-weight: bold;}
+.theme-dark.section-selector-1 #btn-submit { font-family: "Archivo", serif; font-weight: bold; }
 .theme-dark.section-selector-1 #btn-submit { background-color: var(--coral) }
 .theme-dark.section-selector-1 #btn-submit { border-color: var(--coral) }
-.theme-dark.section-selector-1 #btn-submit { color: var(--pure-black) }
+.theme-dark.section-selector-1 #btn-submit { color: var(--pure-black); transition: all 0.3 ease; }
 
 .theme-dark.section-selector-1 #btn-submit:focus,
 .theme-dark.section-selector-1 #btn-submit:hover,
@@ -252,15 +252,15 @@ footer.theme-dark h3 { color: var(--peach) }
 footer.theme-dark h3 { font-family: "Archivo", serif; }
 
 footer.theme-dark ul.footer-links li { font-family: "Fira Sans", sans-serif; }
-footer.theme-dark ul.footer-links li a:link, footer.theme-dark ul.footer-links li a:visited { color: var(--coral); text-decoration: none  } 
+footer.theme-dark ul.footer-links li a:link, footer.theme-dark ul.footer-links li a:visited { color: var(--coral); text-decoration: none; transition: all 0.3 ease; } 
 footer.theme-dark ul.footer-links li a:focus, footer.theme-dark ul.footer-links li a:hover, footer.theme-dark ul.footer-links li a:active { color: var(--orchid) } 
 
-.fa-linkedin { color: var(--peach) !important }
+.fa-linkedin { color: var(--peach) !important; transition: all 0.3 ease; }
 .fa-linkedin:hover { color: var(--orchid) !important}
 
 .fa-github-square { color: var(--peach) !important }
 .fa-github-square:hover { color: var(--orchid) !important}
 
 footer.theme-dark .privacy { font-family: "Archivo", serif; }
-footer.theme-dark .privacy a:link, footer.theme-dark .privacy a:visited { color: var(--coral); text-decoration: none; }
+footer.theme-dark .privacy a:link, footer.theme-dark .privacy a:visited { color: var(--coral); text-decoration: none; transition: all 0.3 ease; }
 footer.theme-dark .privacy a:focus, footer.theme-dark .privacy a:hover, footer.theme-dark .privacy a:active { color: var(--orchid) }
