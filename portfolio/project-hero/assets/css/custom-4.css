@@ -1,11 +1,11 @@
 /* ============== Do not delete this ========== */
-.section-selector-1 { background-color: var(--gray-200) }
-.col-3 h3 { margin-bottom: 16px }
+.section-selector-1 { background-color: var(--purple-900) }
+.col-3 h3 { color:var(--pink-700); margin-bottom: 16px }
 
 
 /* =============== Add your custom CSS below =========== */
 header.theme-light { background-color: var(--trend-200) }
-header.theme-light .badge { background-color: var(--purple-700) }
+header.theme-light .badge { background-color: var(--purple-900) }
 header.theme-light .container-btn a.btn:nth-child(1):link,
 header.theme-light .container-btn a.btn:nth-child(1):visited { color: var(--pink-700) }
 
@@ -49,4 +49,14 @@ header h1 {
     font-family: 'Playfair Display', serif;
     letter-spacing: -4px;
     font-weight: 400;
+}
+
+.col-3 a:link, a:visited { 
+    color: var(--trend-200) !important;
+    text-decoration-color: var(--trend-200)!important;
+}
+
+.col-3 a:focus, .col-3 a:hover, .col-3 a:active {
+    color: var(--pink-700) !important;
+    text-decoration-color: var(--pink-700) !important;
 }
