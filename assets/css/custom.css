@@ -69,7 +69,7 @@ nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background: linear-grad
 
 nav.theme-dark .brand {
     max-width: 280px;
-    max-height: auto;
+    max-height: 100px;
 }
 
 /* Menu */
