@@ -68,8 +68,8 @@ html { scroll-behavior: smooth; }
 nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background: linear-gradient(to right, var(--russian-violet), var(--eggplant)) }
 
 nav.theme-dark .brand {
-    max-width: 280px;
-    max-height: 100px;
+    max-width: 200px;
+    max-height: 60px;
 }
 
 /* Menu */
