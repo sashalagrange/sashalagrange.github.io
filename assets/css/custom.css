@@ -150,19 +150,15 @@ header.theme-dark .container-btn a.btn:nth-child(2):active { border-color: var(-
 header .col-text h2, .col-1 > h3 { line-height: 1.8 }
 
 .hero-image { 
-    max-width: 70%;
+    max-width: 60%;
     max-height: auto;
     border: var(--coral) 3px solid;
-}
-
-.hero-project-image { 
-    max-width: 400px;
-    max-height: 260px;
 }
 
 /* Hero Block Portfolio, Store, Contact */
 header.theme-dark .container-text h1 {font-family: "Fira Sans" sans-serif; font-size: var(--fs-xxxl);}
 header.theme-dark .container-text h2 {font-family: "Archivo", serif;}
+header.theme-dark .container-text p {font-family: "Archivo", serif; color: var(--cornsilk);}
 
 header.theme-dark .container-text h2 a:link, header.theme-dark .container-text h2 a:visited { color: var(--peach); transition: all 0.3 ease; }
 header.theme-dark .container-text h2 a:focus, header.theme-dark .container-text h2 a:hover, header.theme-dark .container-text h2 a:active { color: var(--orchid); }
